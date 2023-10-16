@@ -207,7 +207,7 @@ We'll continue with the `subclassing.py` example from above, only altering the r
 
 class DropDownView(disnake.ui.View):
 
-    message: disnake.Message  # adding to typehint the future `message` attribute
+    message: disnake.InteractionMessage  # adding to typehint the future `message` attribute
 
     def __init__(self):
         # this time we will set the timeout to 30.0s
